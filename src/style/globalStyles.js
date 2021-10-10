@@ -50,5 +50,23 @@ export const GlobalStyle = createGlobalStyle`
 
     a {
         text-decoration: none;
+        color: var(--blue);
+        font-weight: bold;
+        margin: 10px;
+
+        :hover {
+            color: var(--pink);
+            transition: 0.5s;
+        }
+    }
+
+    svg {
+        color: var(--blue);
+        margin: 5px;
+
+        :hover {
+            color: var(--pink);
+            transition: 0.5s;
+        }
     }
 `;

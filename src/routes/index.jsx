@@ -4,6 +4,7 @@ import { Home } from '../pages/Home';
 import { Graduation } from "../pages/Graduation";
 import { Wedding } from '../pages/Wedding';
 
+
 export const Routes = () => {
 
     return (
