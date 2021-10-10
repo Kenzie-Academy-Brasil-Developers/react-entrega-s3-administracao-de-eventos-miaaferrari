@@ -1,10 +1,10 @@
+import { Container } from "./style";
 
-
-export const Button = () => {
+export const Button = ({children, ...rest}) => {
 
     return (
-        <div>
-            Button
-        </div>
+        <Container>
+            {children}
+        </Container>
     )
 }

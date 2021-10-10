@@ -36,16 +36,6 @@ export const GlobalStyle = createGlobalStyle`
 
     button {
         cursor: pointer;
-        background: var(--yellow);
-        color: var(--black);
-        border-radius: 8px;
-        border: 2px outset var(---gray); 
-
-        :hover {
-            opacity: 0.9;
-            transition: 0.5s;
-            border-color: var(---black);
-        }
     }
 
     a {

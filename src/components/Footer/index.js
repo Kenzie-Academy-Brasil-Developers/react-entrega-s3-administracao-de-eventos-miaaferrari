@@ -1,7 +1,7 @@
 import logo from '../../assets/logo.png';
 import { FiFacebook, FiInstagram, FiMail, FiMapPin, FiPhoneCall } from 'react-icons/fi';
 import { Link } from 'react-router-dom';
-import { Container, SocialMedias, Contact } from './style';
+import { Container, SocialMedias } from './style';
 
 export const Footer = () => {
 
