@@ -12,11 +12,11 @@ export const Footer = () => {
                     <img src={logo} alt='Kenzinho logo'></img>
                 </div>
                 <div>
-                    <Link>Home</Link>
-                    <Link>Wedding</Link>
-                    <Link>Graduation</Link>
-                    <Link>Confra</Link>
-                    <Link>Contact</Link>
+                    <Link to='/'>Home</Link>
+                    <Link to='/wedding'>Wedding</Link>
+                    <Link to='/graduation'>Graduation</Link>
+                    <Link to='/confraternization'>Confra</Link>
+                    <Link to='/contact'>Contact</Link>
                 </div>
                 <div>
                     <div><FiPhoneCall /><p>(99) 9876-9876</p></div>

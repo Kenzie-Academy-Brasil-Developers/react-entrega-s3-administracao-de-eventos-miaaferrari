@@ -3,6 +3,7 @@ import { Confraternization } from "../pages/Confraternization";
 import { Home } from '../pages/Home';
 import { Graduation } from "../pages/Graduation";
 import { Wedding } from '../pages/Wedding';
+import { Contact } from "../pages/Contact";
 
 
 export const Routes = () => {
@@ -20,6 +21,9 @@ export const Routes = () => {
             </Route>
             <Route exact path='/wedding'>
                 <Wedding />
+            </Route>
+            <Route exact path='/contact'>
+                <Contact />
             </Route>
         </Switch>
     )

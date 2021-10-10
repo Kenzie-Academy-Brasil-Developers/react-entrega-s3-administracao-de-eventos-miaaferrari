@@ -3,7 +3,8 @@ import styled from "styled-components";
 export const Container = styled.footer`
     display: flex;
     flex-direction: column;
-
+    width: 100%;
+   
     section {
         display: flex;
         flex-direction: row;

@@ -16,7 +16,7 @@ export const Header = () => {
                 <Link to='/wedding'>Wedding</Link>
                 <Link to='/graduation'>Graduation</Link>
                 <Link to='/confraternization'>Confra</Link>
-                <Link to='#'>Contact</Link>
+                <Link to='/contact'>Contact</Link>
                 <Link><FiFacebook /></Link>
                 <Link><FiInstagram /></Link>
             </Menu>
