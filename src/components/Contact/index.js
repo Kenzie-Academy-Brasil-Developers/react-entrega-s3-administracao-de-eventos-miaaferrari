@@ -34,41 +34,53 @@ export const ContactComponent = () => {
             <h1>Contact</h1>
             <h3>Do you want know more? Please, send us a message (:</h3>
             <form onSubmit={handleSubmit(onSubmitFunction)}>
-                <label for='name'>Name</label>
-                <input 
-                    type='text' 
-                    name='name' 
-                    {...register('name')} 
-                    error={errors.name?.message}/>
+                <div>
+                    <label for='name'>Name</label>
+                    <input 
+                        type='text' 
+                        name='name' 
+                        {...register('name')} 
+                        error={errors.name?.message}/>
+                </div>
 
-                <label for='email'>E-mail</label>
-                <input 
-                    type='email' 
-                    name='email'
-                    {...register('email')} 
-                    error={errors.email?.message}/>
+                <div>
+                    <label for='email'>E-mail</label>
+                    <input 
+                        type='email' 
+                        name='email'
+                        {...register('email')} 
+                        error={errors.email?.message}/>
+                </div>
 
-                <label for='phone'>Phone</label>
-                <input 
-                    type='text' 
-                    name='phone'
-                    {...register('phone')} 
-                    error={errors.phone?.message}/>
+                <div>
+                    <label for='phone'>Phone</label>
+                    <input 
+                        type='text' 
+                        name='phone'
+                        {...register('phone')} 
+                        error={errors.phone?.message}/>
+                </div>
 
-                <label for='subject'>Subject</label>
-                <input 
-                    type='text' 
-                    name='subject'
-                    {...register('subject')} 
-                    error={errors.subject?.message}/>
+                <div>
+                    <label for='subject'>Subject</label>
+                    <input 
+                        type='text' 
+                        name='subject'
+                        {...register('subject')} 
+                        error={errors.subject?.message}/>
+                </div>
 
-                <label for='message'>Message</label>
-                <input 
-                    type='text' 
-                    name='message'
-                    {...register('message')} 
-                    error={errors.message?.message}/>
-                <Button type='submit'>Send</Button>
+                <div>
+                    <label for='message'>Message</label>
+                    <textarea 
+                        type='text' 
+                        name='message'
+                        {...register('message')} 
+                        error={errors.message?.message}/>
+                </div>
+
+                    <Button type='submit'>Send</Button>
+
             </form>
         </Container>
     )
