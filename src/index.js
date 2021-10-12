@@ -7,11 +7,11 @@ import { Providers } from './providers';
 
 ReactDOM.render(
   <React.StrictMode>
-    {/* <Providers> */}
+    <Providers>
       <BrowserRouter>
         <App />
       </BrowserRouter>
-    {/* </Providers> */}
+    </Providers>
   </React.StrictMode>,
   document.getElementById('root')
 );

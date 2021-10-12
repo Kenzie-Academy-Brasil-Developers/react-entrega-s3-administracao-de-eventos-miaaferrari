@@ -28,7 +28,7 @@ export const GlobalStyle = createGlobalStyle`
         color: var(--black);
     }
 
-    span {
+    span, label {
         font-weight: 600;
         color: var(--black);
 
