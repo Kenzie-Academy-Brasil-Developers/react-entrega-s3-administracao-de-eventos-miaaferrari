@@ -6,17 +6,16 @@ export const ProductContext = createContext();
 export const ProductProvider = ({children}) => {
     const [products, setProducts] = useState([]);
 
-    // const getProducts = () => {
-    //     axios
-    //         .get('https://api.punkapi.com/v2/beers')
-    //         .then((response) => setProducts(response.data))
-    //         .catch((e) => console.log(e));
-    // };
+    const getProducts = () => {
+        axios
+            .get('https://api.punkapi.com/v2/beers')
+            .then((response) => setProducts(response.data))
+            .catch((e) => console.log(e));
+    };
 
-    // useEffect(() => {
-    //     getProducts();
-    //     console.log(products)
-    // });
+    useEffect(() => {
+        getProducts();
+    });
 
     return (
         <ProductContext.Provider value={{products, setProducts}}>
