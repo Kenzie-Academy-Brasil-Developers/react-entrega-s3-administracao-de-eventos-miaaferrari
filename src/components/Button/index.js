@@ -1,9 +1,9 @@
 import { Container } from "./style";
 
-export const Button = ({children, ...rest}) => {
+export const Button = ({children, onClick}) => {
 
     return (
-        <Container>
+        <Container onClick={onClick}>
             {children}
         </Container>
     )

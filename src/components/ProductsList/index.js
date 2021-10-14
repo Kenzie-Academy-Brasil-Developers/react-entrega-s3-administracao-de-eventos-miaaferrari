@@ -1,22 +1,23 @@
-import { useContext, useEffect } from "react"
+import { useContext } from "react"
 import { ProductContext } from '../../providers/product';
 import { Product } from "../Product";
-import axios from "axios";
-import { Button } from "../Button";
+import { Container } from './style';
 
+ 
 
 export const ProductsList = () => {
 
-    const { products, setProducts } = useContext(ProductContext);
-   
+    const { products } = useContext(ProductContext);
+      
+
     return (
-        <div>
-          
-           {products.map((item) => (
-               <div key={item.id}> 
-                   <Product product={item} />
-                </div> 
-           ))}
-        </div>
+        <Container>
+            
+            {products.map((product) => (
+                <div key={product.id}> 
+                    <Product product={product}/>
+                    </div>))} 
+              
+        </Container>
     )
 }

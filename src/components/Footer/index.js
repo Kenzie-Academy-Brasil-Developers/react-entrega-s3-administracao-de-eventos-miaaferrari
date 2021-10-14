@@ -30,8 +30,8 @@ export const Footer = () => {
                 </div>
             </section>
             <SocialMedias>
-                <Link><FiFacebook /></Link>
-                <Link><FiInstagram /></Link>
+                <Link to='#'><FiFacebook /></Link>
+                <Link to='#'><FiInstagram /></Link>
             </SocialMedias>
             <span>2021 Copyright | All rights reserved | (99) 9876-9876 | contact@kenzinhoevents.com.br</span>
         </Container>

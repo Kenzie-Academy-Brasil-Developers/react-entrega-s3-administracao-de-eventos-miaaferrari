@@ -1,9 +1,18 @@
+import { useContext } from 'react';
+import { GraduationContext } from '../../providers/graduation';
+import { WeddingContext } from '../../providers/wedding';
+import { ConfraContext } from '../../providers/confra';
 import { Button } from '../Button';
 import { Container } from './style';
 
 export const Product = ({product}) => {
 
-    return (
+        
+        const { addToWedding, removeFromWedding } = useContext(WeddingContext);
+        const { addToGraduation, removeFromGraduation } = useContext(GraduationContext);
+        const { addToConfra, removeFromConfra } = useContext(ConfraContext);
+              
+        return (
         <Container>
             <h4>{product.name} - {product.volume.value} {product.volume.unit}</h4>
             <img src={product.image_url} alt={product.name} />
@@ -12,16 +21,12 @@ export const Product = ({product}) => {
                 <summary>Description</summary>
                 <p>{product.description}</p>
             </details>
-            <form>
-                <label for='event'>Choose an event:</label>
-                <select name='event'>
-                    <option>Select</option>
-                    <option value='wedding'>Wedding</option>
-                    <option value='confra'>Confraternization</option>
-                    <option value='graduation'>Graduation</option>
-                </select>
-                <Button type="submit">Add</Button>
-            </form>
+            <div>
+                <span>Choose an event:</span>
+                <Button onClick={() => addToWedding(product)}>Wedding</Button>
+                <Button onClick={() => addToConfra(product)}>Confraternization</Button>
+                <Button onClick={() => addToGraduation(product)}>Graduation</Button> 
+            </div>
         </Container>
     )
 }
