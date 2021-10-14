@@ -8,9 +8,9 @@ import { Container } from './style';
 export const Product = ({product}) => {
 
         
-        const { addToWedding, removeFromWedding } = useContext(WeddingContext);
-        const { addToGraduation, removeFromGraduation } = useContext(GraduationContext);
-        const { addToConfra, removeFromConfra } = useContext(ConfraContext);
+        const { addToWedding } = useContext(WeddingContext);
+        const { addToGraduation } = useContext(GraduationContext);
+        const { addToConfra } = useContext(ConfraContext);
               
         return (
         <Container>
